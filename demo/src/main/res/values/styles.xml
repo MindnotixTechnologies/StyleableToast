@@ -1,11 +1,18 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DemoButtonStyle" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorAccent</item>
     </style>
 
     <style name="allStyles">
@@ -25,9 +32,6 @@
     <style name="style2">
         <item name="textColor">#ffffff</item>
         <item name="colorBackground">#5c7299</item>
-    </style>
-
-    <style name="empty">
     </style>
 
 </resources>
