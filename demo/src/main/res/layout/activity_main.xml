@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp">
+                android:paddingBottom="8dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
                     android:id="@+id/corner_value_txv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="8dp"
                     tools:text="24dp" />
 
             </LinearLayout>
@@ -122,29 +122,44 @@
             android:layout_marginTop="20dp">
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
                 android:text="Text bold"
                 android:textStyle="bold" />
 
             <CheckBox
-                android:id="@+id/textbold_checkbox"
+                android:id="@+id/text_bold_cb"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:paddingBottom="10dp"
-                android:text="Solid background"
+                android:text="Icon left"
                 android:textStyle="bold" />
 
             <CheckBox
-                android:id="@+id/solidbackground_checkbox"
+                android:id="@+id/icon_left_cb"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Icon right"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/icon_right_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
         </LinearLayout>
     </LinearLayout>
 
@@ -155,6 +170,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="40dp" />
 
 </RelativeLayout>
